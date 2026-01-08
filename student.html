@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="project.css">
+</head>
+<body data-role="student">
+  <div class="container">
+
+  <h1>Student Dashboard</h1>
+  <p>Book appointment (coming next)</p>
+
+  <button id="logoutBtn">Logout</button>
+  <h2>Request Appointment</h2>
+
+<select id="teacherSelect">
+  <option value="">Select Teacher</option>
+</select>
+<br><br>
+
+<textarea id="message" placeholder="Reason for appointment"></textarea>
+<br><br>
+
+<button id="bookBtn">Send Request</button>
+
+<p id="apptMsg"></p>
+<h2>My Appointments status </h2>
+<div id="myAppointments"></div>
+</div>
+
+
+  <script type="module" src="firebase.js"></script> 
+  <script type="module" src="student.js"></script>
+
+  <!-- <script type="module" src="protect.js"></script>  -->
+</body>
+</html>
